@@ -7,9 +7,9 @@ module.exports = function handler(apiurl) {
   
     var buffer = "",
         data,
-        route;
-
-    var request = http.get(apiurl, function(response) {
+        route,
+        promise = new Promise();
+    http.get(apiurl, function(response) {
         // data is streamed in chunks from the server
         // so we have to handle the "data" event
 
@@ -20,9 +20,8 @@ module.exports = function handler(apiurl) {
         response.on("end", function(err) {
             // finished transferring data
             // dump the raw data
-            data = JSON.parse(buffer);
-            request.resolve(data);
+            promise.resolve(JSON.parse(buffer));
         });
     });
-    return request;
+    return promise;
 }
