@@ -1,17 +1,17 @@
 'use strict'
 
-const http = require('http');
+var http = require('http');
 
 module.exports = function handler(apiurl) {
     //Handler code
-    let url = apiurl;
+  
+    var buffer = "",
+        data,
+        route;
 
-    let request = http.get(url, function(response) {
+    var request = http.get(apiurl, function(response) {
         // data is streamed in chunks from the server
         // so we have to handle the "data" event
-        let buffer = "",
-            data,
-            route;
 
         response.on("data", function(chunk) {
             buffer += chunk;
@@ -21,8 +21,7 @@ module.exports = function handler(apiurl) {
             // finished transferring data
             // dump the raw data
             data = JSON.parse(buffer);
-            return Promise.resolve(data);
         });
     });
-
+    return Promise.resolve(data);
 }
