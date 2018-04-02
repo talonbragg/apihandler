@@ -4,6 +4,8 @@
 Usage:
 
 ```javascript
+  require('restapihandler');
+  
   handler()
     .then(data => {
       console.log(data.value);
