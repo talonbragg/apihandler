@@ -21,8 +21,8 @@ module.exports = function handler(apiurl) {
             // finished transferring data
             // dump the raw data
             data = JSON.parse(buffer);
-            Promise.resolve(data);
+            request.resolve(data);
         });
     });
-    return Promise;
+    return request;
 }
