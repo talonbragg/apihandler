@@ -1,7 +1,10 @@
 # Api handler
 **A simple NodeJs module to use a RESTful API**
 
-Usage:
+**Installation:**
+`npm install restapihandler`
+
+**Usage:**
 
 ```javascript
   require('restapihandler');
