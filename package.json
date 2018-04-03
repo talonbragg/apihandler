@@ -1,6 +1,6 @@
 {
   "name": "apihandlerrestful",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple api handler for nodejs",
   "main": "handler.js",
   "scripts": {
@@ -24,6 +24,8 @@
   "homepage": "https://github.com/talonbragg/apihandler#readme",
   "devDependencies": {
     "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
+    "istanbul": "^0.4.5",
     "mocha": "^5.0.5"
   },
   "directories": {
