@@ -7,12 +7,12 @@
 **Usage:**
 
 ```javascript
-  require('apihandlerrestful');
-  
-  handler("https://yourapi.com/")
-    .then(data => {
-      console.log(data.value);
+require('apihandlerrestful');
 
-      //Just do whatever you want with "data"
-    })
+handler("https://yourapi.com/")
+  .then(data => {
+    console.log(data.value);
+
+    //Just do whatever you want with "data"
+  })
 ```
