@@ -2,12 +2,12 @@
 **A simple NodeJs module to use a RESTful API**
 
 **Installation:**
-`npm install restapihandler`
+`npm install apihandlerrestful`
 
 **Usage:**
 
 ```javascript
-  require('restapihandler');
+  require('apihandlerrestful');
   
   handler("https://yourapi.com/")
     .then(data => {
