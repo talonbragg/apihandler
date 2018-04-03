@@ -9,7 +9,7 @@
 **Usage:**
 
 ```javascript
-require('apihandlerrestful');
+let handler = require('apihandlerrestful');
 
 handler("https://yourapi.com/")
   .then(data => {
