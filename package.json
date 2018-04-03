@@ -1,6 +1,6 @@
 {
-  "name": "apihandler",
-  "version": "0.0.1",
+  "name": "apihandlerrestful",
+  "version": "0.1.4",
   "description": "A simple api handler for nodejs",
   "main": "handler.js",
   "scripts": {
@@ -8,8 +8,18 @@
   },
   "keywords": [
     "api",
-    "handler"
+    "handler",
+    "restful",
+    "apihandlerrestful"
   ],
   "author": "Talon Bragg",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talonbragg/apihandler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/talonbragg/apihandler/issues"
+  },
+  "homepage": "https://github.com/talonbragg/apihandler#readme"
 }
