@@ -3,7 +3,6 @@
 var http = require('http');
 
 module.exports = function handler(apiurl) {
-    //Handler code
 
     var buffer = "",
         data,
