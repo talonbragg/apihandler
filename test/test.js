@@ -5,7 +5,7 @@ const handler = require('../handler.js');
 
 describe('#apiData', function() {
     it('should return a json object', function() {
-        handler()
+        handler("https://sponge-impulse.glitch.me/finduser/?name=dabest")
             .then(data => {
                 expect(data).to.be.an('object');
             })
