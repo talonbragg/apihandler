@@ -9,7 +9,7 @@
 ```javascript
   require('restapihandler');
   
-  handler()
+  handler("https://yourapi.com/")
     .then(data => {
       console.log(data.value);
 
