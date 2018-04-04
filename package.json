@@ -1,6 +1,6 @@
 {
   "name": "apihandlerrestful",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A simple api handler for nodejs",
   "main": "handler.js",
   "scripts": {

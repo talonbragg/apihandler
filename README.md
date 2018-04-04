@@ -18,7 +18,7 @@ handler("http://yourapi.com/")
   .then(data => {
     console.log(data.value);
 
-    //Just do whatever you want with "data"
+    //Just do whatever you want with data
   })
 ```
 
