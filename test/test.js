@@ -16,4 +16,10 @@ describe('#apiData', function() {
                 expect(data.userName).to.be.a('string');
             })
     });
+    it('should return an integer', function() {
+        handler('http://sponge-impulse.glitch.me/finduser/?name=dabest')
+            .then(data => {
+                expect(parseInt(data._id)).to.be.an('integer');
+            })
+    });
 });
