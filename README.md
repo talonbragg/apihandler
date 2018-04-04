@@ -14,10 +14,12 @@
 ```javascript
 let handler = require('apihandlerrestful');
 
-handler("https://yourapi.com/")
+handler("http://yourapi.com/")
   .then(data => {
     console.log(data.value);
 
     //Just do whatever you want with "data"
   })
 ```
+
+**Important: You are not able to use an API with https://, use normal http://**
