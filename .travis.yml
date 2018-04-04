@@ -5,5 +5,5 @@ node_js:
 
 before_script: chmod 0777 ./node_modules/.bin/mocha
 
-after_success:
-  - 'cat ./coverage/lcov.info | ./node_modules/.bin/coveralls'
+after_script:
+  - npm run cover
