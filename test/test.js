@@ -16,10 +16,16 @@ describe('#apiData', function() {
                 expect(data.userName).to.be.a('string');
             })
     });
+    it('should return a string', function() {
+        handler('http://sponge-impulse.glitch.me/finduser/?name=Test')
+            .then(data => {
+                expect(data._id).to.be.a('string');
+            })
+    });
     it('should return an integer', function() {
         handler('http://sponge-impulse.glitch.me/finduser/?name=Test')
             .then(data => {
-                expect(parseInt(data._id)).to.be.an('integer');
+                expect(data.__v).to.be.a('number');
             })
     });
 });
