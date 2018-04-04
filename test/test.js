@@ -17,7 +17,7 @@ describe('#apiData', function() {
             })
     });
     it('should return an integer', function() {
-        handler('http://sponge-impulse.glitch.me/finduser/?name=dabest')
+        handler('http://sponge-impulse.glitch.me/finduser/?name=Test')
             .then(data => {
                 expect(parseInt(data._id)).to.be.an('integer');
             })
