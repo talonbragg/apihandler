@@ -14,17 +14,11 @@ module.exports = function handler(apiurl) {
 
                 response.on("data", function(chunk) {
                     buffer += chunk;
-                }, function(err) {
-                    console.error(err)
                 });
 
                 response.on("end", function(err) {
                     // finished transferring data
                     // dump the raw data
-                    if (err) {
-                        console.error(err);
-                        reject(err);
-                    }
                     resolve(JSON.parse(buffer));
                 });
             });
