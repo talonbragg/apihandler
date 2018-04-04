@@ -8,6 +8,7 @@ before_script: chmod 0777 ./node_modules/.bin/mocha
 install:
   - npm install -g codecov
 script:
+  - istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && codecov
   - codecov
 
 after_success:
