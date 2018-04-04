@@ -4,8 +4,7 @@
   "description": "A simple api handler for nodejs",
   "main": "handler.js",
   "scripts": {
-    "test": "mocha --reporter spec",
-    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec test/"
+    "test": "mocha --reporter spec"
   },
   "keywords": [
     "api",
